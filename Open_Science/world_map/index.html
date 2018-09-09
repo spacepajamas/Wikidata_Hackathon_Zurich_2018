@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v1.min.js"></script>
+</head>
+
+<body>
+  <script>
+    var width = 900,
+      height = 500;
+
+    var color = d3.scale.threshold()
+      .domain([0, 20, 40, 60, 80])
+      .range(["#ffffff", "#ffe6e6", "#ff9999", "#ff6666", "#ff3333", "#ff0000"]);
+
+    var projection = d3.geo.mercator()
+      .scale((width - 3) / (2 * Math.PI))
+      .translate([width / 2, height / 2]);
+
+    var path = d3.geo.path()
+      .projection(projection);
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    queue()
+      .defer(d3.json, "world.geojson")
+      .defer(d3.csv, "test_country.csv")
+      .await(ready);
+
+    function ready(error, world, species) {
+      if (error) throw error;
+
+      console.log(world)
+
+      var rateById = {};
+
+      species.forEach(function(d) {
+        rateById[d.ISO_3DIGIT] = +d.Species;
+      });
+
+      console.log(rateById);
+
+      svg.append("g")
+        .attr("class", "countries")
+        .selectAll("path")
+        .data(world.features)
+        .enter().append("path")
+        .attr("d", path)
+        .style("fill", function(d) {
+          return color(rateById[d.id]);
+        });
+    }
+
+    var svg = d3.select("svg");
+svg.on("click", function () {
+   var mouse = d3.mouse(this);
+   svg.append("use")
+       .attr("href", "#pointer")
+       .attr("x", mouse[0])
+       .attr("y", mouse[1])
+       .attr("fill", "#039BE5")
+       .attr("stroke", "#039BE5")
+       .attr("stroke-width", "1px");
+});
+  </script>
+</body>
+
+</html>

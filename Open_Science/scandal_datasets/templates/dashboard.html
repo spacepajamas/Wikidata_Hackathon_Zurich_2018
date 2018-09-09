@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>C3</title>
+    <meta charset="utf-8" />
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/d3-queue.v1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<h1>Dataset Dashboard</h1>
+
+
+<h2>Occupation</h2>
+
+<div id="chart3"></div>
+
+<script>
+var chart = c3.generate({
+    bindto: '#chart3',
+    data: {
+    columns: {{occupation|safe }},
+        type : 'donut'
+    },
+    donut: {
+        title: "Occupation",
+    }
+});
+</script>
+
+<h2>Country</h2>
+
+<div id="chart4"></div>
+
+<script>
+var chart = c3.generate({
+    bindto: '#chart4',
+
+    data: {
+    columns: {{country|safe }},
+        type : 'bar'
+
+    },
+
+});
+</script>
+<h2>Gender</h2>
+<div id="chart"></div>
+
+<script>
+var chart = c3.generate({
+    data: {
+        columns: {{gender|safe }},
+        type : 'pie'
+        }
+});
+
+</script>
+<h2>World Map</h2>
+pending...
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

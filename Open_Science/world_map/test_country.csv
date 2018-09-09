@@ -1,0 +1,76 @@
+OBJECTID,ISO_3DIGIT,NAME,LONG_NAME,Species
+0,DNK,Denmark,Denmark,3
+3,HUN,Hungary,Hungary,1
+4,ESP,Spain,Spain,25
+26,CAN,Canada,Canada,2
+30,CHE,Switzerland,Switzerland,2
+33,GRC,Greece,Greece,6
+39,KHM,Cambodia,Cambodia,1
+40,HND,Honduras,Honduras,2
+42,SLV,El Salvador,El Salvador,2
+44,IRQ,Iraq,Iraq,2
+46,LBN,Lebanon,Lebanon,2
+48,USA,United States of America,United States of America,30
+55,PAK,Pakistan,Pakistan,5
+79,TWN,Taiwan,Taiwan,4
+83,BWA,Botswana,Botswana,1
+84,NLD,Kingdom of the Netherlands,Kingdom of the Netherlands,4
+88,FIN,Finland,Finland,4
+92,POL,Poland,Poland,2
+94,TUR,Turkey,Turkey,4
+98,URY,Uruguay,Uruguay,7
+103,EGY,Egypt,Egypt,5
+110,KEN,Kenya,Kenya,2
+112,GHA,Ghana,Ghana,6
+117,GBR,United Kingdom,United Kingdom,19
+141,BEL,Belgium,Belgium,18
+158,ISL,Iceland,Iceland,7
+165,EST,Estonia,Estonia,2
+168,CZE,Czech Republic,Czech Republic,1
+169,SWE,Sweden,Sweden,3
+170,ROU,Romania,Romania,4
+176,AZE,Azerbaijan,Azerbaijan,6
+182,KAZ,Kazakhstan,Kazakhstan,2
+184,ZAF,South Africa,South Africa,1
+185,ITA,Italy,Italy,14
+197,AUS,Australia,Australia,1
+200,ECU,Ecuador,Ecuador,3
+203,BOL,Bolivia,Bolivia,2
+205,JOR,Jordan,Jordan,1
+206,MYS,Malaysia,Malaysia,1
+207,COG,Republic of the Congo,Republic of the Congo,1
+208,GIN,Guinea,Guinea,2
+210,CIV,Ivory Coast,Ivory Coast,3
+213,NGA,Nigeria,Nigeria,1
+214,SEN,Senegal,Senegal,3
+217,SUN,Soviet Union,Soviet Union,26
+243,MEX,Mexico,Mexico,5
+248,FRA,France,France,21
+269,PSE,State of Palestine,State of Palestine,2
+271,CHN,People's Republic of China,People's Republic of China,25
+296,BRA,Brazil,Brazil,8
+298,HKG,Hong Kong,Hong Kong,12
+316,RUS,Russia,Russia,11
+327,DEU,Germany,Germany,11
+338,UKR,Ukraine,Ukraine,7
+345,MDA,Moldova,Moldova,3
+348,AND,Andorra,Andorra,1
+349,GEO,Georgia,Georgia,4
+353,MLT,Malta,Malta,5
+358,DZA,Algeria,Algeria,1
+359,CHL,Chile,Chile,1
+360,SRB,Serbia,Serbia,1
+361,ARG,Argentina,Argentina,14
+375,PER,Peru,Peru,9
+384,IND,India,India,28
+412,COL,Colombia,Colombia,1
+413,ISR,Israel,Israel,18
+431,QAT,Qatar,Qatar,3
+434,SAU,Saudi Arabia,Saudi Arabia,3
+437,SYR,Syria,Syria,7
+444,ARE,United Arab Emirates,United Arab Emirates,1
+445,KOR,South Korea,South Korea,1
+446,AGO,Angola,Angola,1
+447,COD,Democratic Republic of the Congo,Democratic Republic of the Congo,1
+448,MAR,Morocco,Morocco,5
+453,SDN,Sudan,Sudan,2
